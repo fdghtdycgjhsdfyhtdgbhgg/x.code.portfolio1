@@ -893,7 +893,7 @@
 <header>
   <div class="logo-container">
     <div class="logo">
-      <img src="https://media.discordapp.net/attachments/1385021380822569011/1385338875953545236/20250418_133320_.png?ex=687558de&is=6874075e&hm=cb001e12cf9bcb6321cb0ff1af446ed1fa1eb8066a6f85164bdddf4edd44c5b7&=&format=webp&quality=lossless&width=563&height=563" alt="Logo">
+      <img src="https://i.postimg.cc/wv59Vp9z/20250418-133320.webp" alt="Logo">
     </div>
     <h1>X Code</h1>
   </div>
@@ -917,7 +917,7 @@
 <section id="home" class="hero">
   <div class="hero-content">
     <div class="profile-image">
-      <img src="https://media.discordapp.net/attachments/1385021380822569011/1385338875953545236/20250418_133320_.png?ex=687558de&is=6874075e&hm=cb001e12cf9bcb6321cb0ff1af446ed1fa1eb8066a6f85164bdddf4edd44c5b7&=&format=webp&quality=lossless&width=563&height=563" alt="Profile Image">
+      <img src="https://i.postimg.cc/wv59Vp9z/20250418-133320.webp">
     </div>
     <h1>X Code</h1>
     <div class="typewriter">
@@ -1002,7 +1002,6 @@
                 </div>
             </div>
         </section>
-        <!-- هنا تكدر تحط صور لمشاريعك عند src  -->
         <section id="skills">
             <h2>My Skills</h2>
             <p>Here are some of the technologies and tools I work with</p>
@@ -1187,7 +1186,7 @@ a web developer web designer and Discord bot programmer. I specialize in craftin
 With a strong blend of creative design and clean efficient code I turn ideas into seamless digital experiences — whether youre launching a new website or automating your community with powerful bots."</p>
       <div class="testimonial-author">
         <div class="author-image">
-          <img src="https://images-ext-1.discordapp.net/external/Vah4zgHu5hZgVcMG3bd-EE6C_55wOmFH7pv2oNZCDCU/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/1096947562847666237/f550de3272da36c32d2cf2ecab249c03.webp?format=webp&width=288&height=288" alt="♯ 𝗔𝗯𝘂 𝗗𝗮𝗥𝗸 . ⁵⁰⁹">
+          <img src="https://i.postimg.cc/90JV6Y4N/f550de3272da36c32d2cf2ecab249c03.webp" alt="♯ 𝗔𝗯𝘂 𝗗𝗮𝗥𝗸 . ⁵⁰⁹">
         </div>
         <div>
           <h4>♯ 𝗔𝗯𝘂 𝗗𝗮𝗥𝗸 . ⁵⁰⁹</h4>
@@ -1201,7 +1200,7 @@ With a strong blend of creative design and clean efficient code I turn ideas int
       <p>"Test"</p>
       <div class="testimonial-author">
         <div class="author-image">
-          <img src="https://media.discordapp.net/attachments/1385021380822569011/1385338875953545236/20250418_133320_.png?ex=687558de&is=6874075e&hm=cb001e12cf9bcb6321cb0ff1af446ed1fa1eb8066a6f85164bdddf4edd44c5b7&=&format=webp&quality=lossless&width=563&height=563" alt="ميسي">
+          <img src="https://i.postimg.cc/wv59Vp9z/20250418-133320.webp" alt="Test">
         </div>
         <div>
           <h4>tets</h4>
@@ -1215,7 +1214,7 @@ With a strong blend of creative design and clean efficient code I turn ideas int
       <p>"Test"</p>
       <div class="testimonial-author">
         <div class="author-image">
-          <img src="https://media.discordapp.net/attachments/1385021380822569011/1385338875953545236/20250418_133320_.png?ex=687558de&is=6874075e&hm=cb001e12cf9bcb6321cb0ff1af446ed1fa1eb8066a6f85164bdddf4edd44c5b7&=&format=webp&quality=lossless&width=563&height=563" alt="لامين يامال">
+          <img src="https://i.postimg.cc/wv59Vp9z/20250418-133320.webp" alt="Test">
         </div>
         <div>
           <h4> test</h4>
@@ -1272,9 +1271,7 @@ With a strong blend of creative design and clean efficient code I turn ideas int
     </footer>
 
     <script>
-        // Navigation menu active state
         document.addEventListener('DOMContentLoaded', function() {
-            // Mobile menu toggle
             const menuToggle = document.querySelector('.mobile-menu-toggle');
             const menu = document.querySelector('#menu');
             
@@ -1284,11 +1281,9 @@ With a strong blend of creative design and clean efficient code I turn ideas int
                 });
             }
             
-            // Navigation active state
             const navLinks = document.querySelectorAll('nav a');
             const sections = document.querySelectorAll('section');
             
-            // Set active link on scroll
             window.addEventListener('scroll', function() {
                 let current = '';
                 
@@ -1309,24 +1304,20 @@ With a strong blend of creative design and clean efficient code I turn ideas int
                 });
             });
             
-            // Set active link on click
             navLinks.forEach(link => {
                 link.addEventListener('click', function() {
                     navLinks.forEach(link => link.classList.remove('active'));
                     this.classList.add('active');
                     
-                    // Close mobile menu when link is clicked
                     menu.classList.remove('active');
                 });
             });
             
-            // Portfolio filtering
             const filterButtons = document.querySelectorAll('.filter-button');
             const portfolioItems = document.querySelectorAll('.portfolio-item');
             
             filterButtons.forEach(button => {
                 button.addEventListener('click', function() {
-                    // Update active button
                     filterButtons.forEach(btn => btn.classList.remove('active'));
                     this.classList.add('active');
                     
@@ -1344,10 +1335,8 @@ With a strong blend of creative design and clean efficient code I turn ideas int
                 });
             });
             
-            // Animate skill bars on scroll
             const skillBars = document.querySelectorAll('.progress-bar');
             
-            // Function to check if element is in viewport
             function isInViewport(element) {
                 const rect = element.getBoundingClientRect();
                 return (
@@ -1358,7 +1347,6 @@ With a strong blend of creative design and clean efficient code I turn ideas int
                 );
             }
             
-            // Function to animate skill bars
             function animateSkillBars() {
                 skillBars.forEach(bar => {
                     if (isInViewport(bar)) {
@@ -1368,7 +1356,6 @@ With a strong blend of creative design and clean efficient code I turn ideas int
                 });
             }
             
-            // Initial check and add scroll event
             animateSkillBars();
             window.addEventListener('scroll', animateSkillBars);
         });
